@@ -1,0 +1,24 @@
+.movie-row {
+    padding: 25px 5%;
+}
+
+.movie-row h2 {
+    font-size: 22px;
+    margin-bottom: 18px;
+}
+
+.movie-row-container {
+    display: flex;
+    gap: 18px;
+    overflow-x: auto;
+    padding-bottom: 15px;
+}
+
+.movie-row-container::-webkit-scrollbar {
+    height: 6px;
+}
+
+.movie-row-container::-webkit-scrollbar-thumb {
+    background: #555;
+    border-radius: 10px;
+}

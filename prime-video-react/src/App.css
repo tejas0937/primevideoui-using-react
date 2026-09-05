@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #0f171e;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+button {
+    font-family: inherit;
+}
+.page {
+    padding: 110px 5% 50px;
+}
+
+.page h1 {
+    margin-bottom: 30px;
+    font-size: 32px;
+}
+
+.movie-grid {
+    display: grid;
+    grid-template-columns: repeat(
+        auto-fill,
+        minmax(190px, 1fr)
+    );
+    gap: 25px;
+}

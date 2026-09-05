@@ -1,0 +1,87 @@
+.hero {
+    height: 650px;
+    margin-top: 70px;
+
+    background-image:
+        url("/images/family-man.jpg");
+
+    background-size: cover;
+    background-position: center;
+
+    position: relative;
+}
+
+.hero::after {
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        linear-gradient(
+            90deg,
+            #0f171e 0%,
+            rgba(15, 23, 30, 0.85) 25%,
+            rgba(15, 23, 30, 0.35) 65%,
+            rgba(15, 23, 30, 0) 100%
+        );
+}
+
+.hero-overlay {
+    position: relative;
+    z-index: 2;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+}
+
+.hero-content {
+    width: 500px;
+    margin-left: 7%;
+}
+
+.hero-content h1 {
+    font-size: 52px;
+    margin-bottom: 20px;
+}
+
+.hero-info {
+    display: flex;
+    gap: 20px;
+    color: #ddd;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    color: #ddd;
+    line-height: 1.7;
+    font-size: 17px;
+    margin-bottom: 30px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 12px;
+}
+
+.watch-btn,
+.list-btn {
+    padding: 13px 24px;
+    border: none;
+    border-radius: 4px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.watch-btn {
+    background: white;
+    color: black;
+}
+
+.list-btn {
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+}
